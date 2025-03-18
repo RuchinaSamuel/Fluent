@@ -1,82 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            main: "#304747",
-                            dark: "#212833",
-                            gray: "#5E5F6E",
-                            white: "#F7F7F7",
-                        }
-                    },
-            }
-        }
-    }
-        </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/custom.css">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                main: "#304747",
+                dark: "#212833",
+                gray: "#5E5F6E",
+                white: "#F7F7F7",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/custom.css" />
     <title>Fluent</title>
-</head>
-<body class="w-full">
+  </head>
+  <body class="w-full">
     <main class="w-full">
-        <header class="w-full">
-            <!-- Header One for advertisement -->
-            <section class="w-full min-h-12 bg-primary-main flex justify-center items-center text-white gap-3">
-                <p class="py-3 px-2">🚀 Fluent raises $10M Series B from GoTo Financial and Indika Group </p>
-                <div class="w-px h-5 bg-slate-500"></div>
-                <a href="#" class="px-2 py-3 font-medium flex justify-center items-center gap-2">Read more <i class="fa-solid fa-caret-right text-slate-400"></i></a>
-            </section>
-            <section class="w-full border-b h-24 ">
-                <!-- Header Two for navigation -->
-                <nav class="flex justify-between items-center h-full mx-auto w-[90%]">
-                    <a href="#" class="text-primary-dark font-medium text-3xl">Fluent</a>
-                    <div>
-                        <ul class="flex justify-between items-center gap-5 text-md">
-                            <li><a href="#">Solutions <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-                            <li><a href="#">Industries <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Resources</a></li>
-                            <li><a href="#">Company</a></li>
-                        </ul>
-                    </div>
-                    <div class="flex justify-start items-center gap-6">
-                        <a href="" class="text-md">Sign in </a>
-                        <button class="h-12 w-40 bg-primary-main text-white cursor-pointer px-4 text-md">Talk to sales</button>
-                    </div>
-                </nav>
-            </section>
-        </header>
-        <section class="w-full relative">
-            <div class="container mx-auto">
-                <div class="flex justify-between items-center gap-6 pb-6 pt-16">
-                    <div class="w-[55%]">
-                        <div>
-                            <h4 class="uppercase font-normal text-primary-main text-md tracking-[0.1em]">Help your business level up</h4>
-                            <h1 class="text-primary-dark text-7xl font-semibold leading-[4rem] pt-3 pb-5 font-inter">Trusted influencer for your business</h1>
-                            <p class="text-primary-gray text-xl py-3 font-light leading-[2.5rem]">The internet and social media have become effective <br/> areas for marketing a product, Fluent is here to <br/> maximize that potential.</p>
-                        </div>
-                        <div class="mt-5 flex gap-3">
-                            <button class="h-16 w-40 bg-primary-main text-white">Get Started Now</button>
-                            <button class="h-16 w-40 border border-primary-main text-primary-main">Learn More</button>
-                        </div>
-                        <!-- Testimonial -->
-                        <div></div>
-                    </div>
-                    <div class="w-[45%]">
-                        <div class="h-[600px] relative">
-                            <img src="./images/jpg/banner.jpg" alt="hero" class="w-full h-full object-cover absolute top-0 left-0 z-0">
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <header class="w-full">
+        <!-- Header One for advertisement -->
+        <section
+          class="w-full min-h-12 bg-primary-main flex justify-center items-center text-white gap-3"
+        >
+          <p class="py-3 px-2">
+            🚀 Fluent raises $10M Series B from GoTo Financial and Indika Group
+          </p>
+          <div class="w-px h-5 bg-slate-500"></div>
+          <a
+            href="#"
+            class="px-2 py-3 font-medium flex justify-center items-center gap-2"
+            >Read more <i class="fa-solid fa-caret-right text-slate-400"></i
+          ></a>
         </section>
+        <section class="w-full border-b h-24">
+          <!-- Header Two for navigation -->
+          <nav class="flex justify-between items-center h-full mx-auto w-[90%]">
+            <a href="#" class="text-primary-dark font-medium text-3xl"
+              >Fluent</a
+            >
+            <div>
+              <ul class="flex justify-between items-center gap-5 text-md">
+                <li>
+                  <a href="#"
+                    >Solutions
+                    <i class="fa fa-angle-down" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Industries
+                    <i class="fa fa-angle-down" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Company</a></li>
+              </ul>
+            </div>
+            <div class="flex justify-start items-center gap-6">
+              <a href="" class="text-md">Sign in </a>
+              <button
+                class="h-12 w-40 bg-primary-main text-white cursor-pointer px-4 text-md"
+              >
+                Talk to sales
+              </button>
+            </div>
+          </nav>
+        </section>
+      </header>
+      <section class="w-full relative">
+        <div class="container mx-auto">
+          <div class="flex justify-between items-center gap-6 pb-6 pt-16">
+            <div class="w-[55%]">
+              <div>
+                <h4
+                  class="uppercase font-normal text-primary-main text-md tracking-[0.1em]"
+                >
+                  Help your business level up
+                </h4>
+                <h1
+                  class="text-primary-dark text-7xl font-semibold leading-[4rem] pt-3 pb-5 font-inter"
+                >
+                  Trusted influencer for your business
+                </h1>
+                <p
+                  class="text-primary-gray text-xl py-3 font-light leading-[2.5rem]"
+                >
+                  The internet and social media have become effective <br />
+                  areas for marketing a product, Fluent is here to <br />
+                  maximize that potential.
+                </p>
+              </div>
+              <div class="mt-5 flex gap-3">
+                <button class="h-16 w-40 bg-primary-main text-white">
+                  Get Started Now
+                </button>
+                <button
+                  class="h-16 w-40 border border-primary-main text-primary-main"
+                >
+                  Learn More
+                </button>
+              </div>
+              <!-- Testimonial -->
+              <div></div>
+            </div>
+            <div class="w-[45%]">
+              <div class="h-[600px] relative">
+                <img
+                  src="./images/jpg/banner.jpg"
+                  alt="hero"
+                  class="w-full h-full object-cover absolute top-0 left-0 z-0"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ...................... REVIEW -->
+      <section class="w-full">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-12 gap-6 pb-6 pt-16">
+            <div class="w-full col-span-5 h-[420px] bg-primary-main px-8 py-5">
+              <h4 class="uppercase text-slate-400 text-sm font-semibold">
+                Resources
+              </h4>
+              <div class="w-[290px]">
+                <h1
+                  class="font-light text-white text-2xl leading-[2.2rem] mt-4"
+                >
+                  Learn how 10 influencer tips can increase your business
+                  profits
+                </h1>
+              </div>
+              <div class="mx-auto">
+                <img
+                  src="./images/jpg/img 1.jpeg"
+                  class="w-[450px] h-52 mt-5"
+                />
+              </div>
+            </div>
+            <div class="w-full col-span-7 h-[420px] bg-primary-white relative">
+              <div class="w-[600px] px-8 py-5">
+                <h4 class="uppercase text-slate-400 text-sm font-semibold">
+                  Review
+                </h4>
+                <h1
+                  class="font-light text-primary-dark text-3xl leading-[2.5rem] mt-4 font-inter"
+                >
+                  "This is very important-the right influencer influence
+                  consumer <br />
+                  opinion, we must use them effectively<br />
+                  like Fluent."
+                </h1>
+              </div>
+
+              <div class="w-full flex item-start justify-end absolute">
+                <img
+                  src="./images/SVG/img-2.svg"
+                  alt="Image description"
+                  class="h-[380px] rotate-180 -mt-[200px]"
+                />
+              </div>
+              <div class="flex mt-[100px] px-8 py-5">
+                <p class="text-[11px]">Marvin McKinney</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- .....................................chart  -->
+      <section class="w-full pt-8">
+        <div class="w-full h-[700px] bg-primary-main pt-16">
+          <div class="flex justify-center items-center">
+            <h6 class="uppercase text-slate-300 text-[10px]">
+              planned process
+            </h6>
+          </div>
+          <div class="flex justify-center items-center text-center">
+            <h1
+              class="font-light text-white text-3xl leading-[2.5rem] font-inter"
+            >
+              This is how Fluent <br />
+              maximize opportunities
+            </h1>
+          </div>
+
+          <div
+            class="w-[900px] h-80 bg-[#375050] mx-auto mt-8 grid grid-cols-12"
+          >
+            <div class="col-span-8 px-8 py-8">
+              <img src="./images/jpg/img.jpeg " class="h-64 w-[1200px]" />
+            </div>
+
+            <div class="col-span-4 relative">
+              <img
+                src="./images/jpg/img (1).jpeg"
+                class="px-4 py-5 bg-[#385655] h-40 w-full"
+              />
+              <img
+                src="./images/jpg/img (2).jpeg"
+                class="px-4 pt-5 bg-[#425D5D] h-40 w-full"
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-12 mt-8 mx-auto w-[1000px] gap-3">
+            <div class="col-span-3">
+              <h5 class="text-[12px] text-white py-3 font-inter">
+                Trend analysis
+                <i
+                  class="fa fa-arrow-up rotate-45 ml-12 text-[10px]"
+                  aria-hidden="true"
+                ></i>
+              </h5>
+              <div
+                class="h-[1px] w-40 bg-gradient-to-r from-primary-white via-gray-500 to-gray-500"
+              ></div>
+
+              <p class="text-[10px] text-white py-3">
+                We analyze every existing trend with <br />the appropriate
+                market, to predict <br />
+                consumer behavior
+              </p>
+            </div>
+
+            <div class="col-span-3">
+              <h5 class="text-[12px] text-white py-3 font-inter">
+                Choose your influencer
+              </h5>
+              <div class="h-[1px] w-40 bg-gray-500"></div>
+
+              <p class="text-[10px] text-gray-400 py-3">
+                Each influencer has a different <br />
+                audience, you can choose <br />
+                according to the data we got in <br />
+                the first stage
+              </p>
+            </div>
+
+            <div class="col-span-3">
+              <h5 class="text-[12px] text-white py-3 font-inter">
+                Do the campaign
+              </h5>
+              <div class="h-[1px] w-40 bg-gray-500"></div>
+
+              <p class="text-[10px] text-gray-400 py-3">
+                Once everything is ready, the <br />
+                influencer will carry out the <br />
+                process of introducing and <br />
+                presenting your product
+              </p>
+            </div>
+
+            <div class="col-span-3">
+              <h5 class="text-[12px] text-white py-3 font-inter">
+                Evaluation and improvement
+              </h5>
+              <div class="h-[1px] w-40 bg-gray-500"></div>
+
+              <p class="text-[10px] text-gray-400 py-3">
+                After all products are marketed, <br />
+                Fluent will evaluate whether <br />
+                everything runs smoothly and is <br />
+                on target
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- .............testimonial2........... -->
+
+      <section class="w-full bg-primary-white pt-12">
+        <div class="container mx-auto">
+          <div>
+            <h6 class="uppercase text-[10px] font-light">testimonials</h6>
+
+            <div class="flex items-center justify-between">
+              <h1 class="font-inter text-3xl font-bold">Why are we trusted?</h1>
+              <button
+                class="h-6 w-20 border border-primary-main text-primary-main text-[10px]"
+              >
+                Learn More
+                <i
+                  class="fa fa-arrow-up rotate-45 text-[9px]"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-12 py-12 gap-3">
+            <div class="col-span-8 h-96">
+              <img
+                src="./images/jpg/img (5).jpeg"
+                class="object-cover h-96 w-full"
+              />
+            </div>
+            <div class="col-span-4 bg-primary-main text-white h-96">
+              <div class="py-5 px-8">
+                <h6 class="uppercase text-[12px]">facts & numbers</h6>
+
+                <h1 class="text-5xl mt-24">
+                  87%
+                  <span class="text-xl">
+                    <br />of customers <br />
+                    recommend fluent <br />
+                    services
+                  </span>
+                </h1>
+              </div>
+            </div>
+          </div>
+          <!-- .............icons.... -->
+          <div class="grid grid-cols-12 pb-5 mx-auto">
+            <div class="col-span-2 h-24 flex justify-center items-center">
+              <img
+                src="./images/png/img__6_-- (1).png"
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="col-span-2 h-24 flex justify-center items-center">
+              <img
+                src="./images/png/img__6_-- (2).png"
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="col-span-2 h-24 flex justify-center items-center">
+              <img
+                src="./images/png/img__6_-- (3).png"
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="col-span-2 h-24 flex justify-center items-center">
+              <img
+                src="./images/png/img__6_-- (4).png"
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="col-span-2 h-24 flex justify-center items-center">
+              <img
+                src="./images/png/img__6_-- (5).png"
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="col-span-2 h-24 flex justify-center items-center">
+              <img
+                src="./images/png/img__6_-- (6).png"
+                class="w-full object-cover"
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-12 gap-3 py-4">
+            <div class="col-span-4 bg-gray-200 h-40 px-4 py-5">
+              <div class="bg-gray-300 h-9 w-9 flex justify-center items-center">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+              </div>
+              <h1 class="pt-8 text-2xl">18,450+</h1>
+              <p class="text-sm">portfolio companies</p>
+            </div>
+
+            <div class="col-span-4 bg-gray-200 h-40 px-4 py-5">
+              <div class="bg-gray-300 h-9 w-9 flex justify-center items-center">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+              </div>
+              <h1 class="pt-8 text-2xl">1,052+</h1>
+              <p class="text-sm">licensed influencers</p>
+            </div>
+
+            <div class="col-span-4 bg-gray-200 h-40 px-4 py-5">
+              <div class="bg-gray-300 h-9 w-9 flex justify-center items-center">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+              </div>
+              <h1 class="pt-8 text-2xl">$45,890,000</h1>
+              <p class="text-sm">marketing costs are saved</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ...........together....... -->
+      <section class="w-full px-12 py-8">
+        <div class="bg-primary-main h-72 w-full">
+          <div class="flex px-8 gap-6">
+            <div class="h-72 w-6 border-r border-l border-gray-600"></div>
+            <div class="h-72 w-6 border-r border-l border-gray-600"></div>
+            <div
+              class="h-72 w-full border-l border-r border-gray-600 flex items-center justify-center"
+            >
+              <div
+                class="border-t border-b border-gray-600 h-60 w-full flex justify-center text-white"
+              >
+                <div class="py-12 text-center">
+                  <h1 class="text-2xl">Let's Work Together</h1>
+                  <p class="text-[12px] py-4">
+                    Now is the time to make a difference from competitors,
+                    ensure <br />
+                    your business grow with Fluent
+                  </p>
+
+                  <div class="space-x-2">
+                    <button class="bg-white text-black text-[10px] px-2 py-2">
+                      Get Started Now
+                    </button>
+                    <button class="border border-white text-[10px] px-2 py-2">
+                      Learn More
+                      <i
+                        class="fa fa-arrow-up rotate-45"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="h-72 w-6 border-r border-l border-gray-600"></div>
+            <div class="h-72 w-6 border-r border-l border-gray-600"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full">
+        <footer class="container mx-auto pt-16">
+          <div class="w-[100%] flex items-center justify-center pb-12">
+            <div class="w-[50%]">
+              <a href="#" class="text-primary-dark font-medium text-3xl"
+                >Fluent</a
+              >
+
+              <p
+                class="pt-4 font-[400] text-[10px] text-gray-900 tracking-[.1em] leading-4"
+              >
+                Fluent helps connect businesses<br />
+                with the right influencers
+              </p>
+
+              <div class="py-4 flex items-center gap-2">
+                <div class="h-8 w-8 rounded-full bg-[#546158]">
+                  <div
+                    class="h-6 w-12 rounded-full border-l border-white"
+                  ></div>
+                  <div
+                    class="h-6 w-12 rounded-full border-t border-white"
+                  ></div>
+                </div>
+
+                <div class="text-[#F6C667] text-[12px]">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-[50%] flex space-x-8">
+              <div class="w-[15%]">
+                <h4 class="pb-2 text-sm">Pages</h4>
+                <ul class="font-[400] text-[10px] text-gray-900 leading-6">
+                  <li><a>Home</a></li>
+                  <li><a>Features</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Pricing</a></li>
+                </ul>
+              </div>
+
+              <div class="w-[15%]">
+                <h4 class="pb-2 text-sm">About</h4>
+                <ul class="font-[400] text-[10px] text-gray-900 leading-6">
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+                  <li><a>Resources</a></li>
+                </ul>
+              </div>
+
+              <div class="">
+                <h4 class="pb-2 text-sm">Newsletters</h4>
+                <p class="font-[400] text-[10px] text-gray-900 pb-4">
+                  Curious about new developments & <br />
+                  updates? sign up for our newsletter!
+                </p>
+
+                <form
+                  class="border border-gray-300 text-gray-600 text-[12px] px-2 py-2 space-x-32"
+                >
+                  <input placeholder="email@fluent.com" />
+                  <span class="">
+                    <i
+                      class="fa fa-arrow-up rotate-90 text-gray-600"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-t border-gray-300 py-4">
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="text-[12px] font-[300] text-gray-900">
+                  Ruchina Ltd
+                  <i class="far fa-copyright" aria-hidden="true"></i> 2025. All
+                  Right Reserved.
+                </p>
+              </div>
+              <div class="space-x-2 text-gray-600">
+                <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
     </main>
-</body>
+  </body>
 </html>

@@ -39,26 +39,33 @@
       <header class="w-full">
         <!-- Header One for advertisement -->
         <section
-          class="w-full min-h-12 bg-primary-main flex justify-center items-center text-white gap-3"
+          class="w-full min-h-12 bg-primary-main flex justify-center items-center text-white gap-3 overflow-hidden"
         >
-          <p class="py-3 px-2">
-            🚀 Fluent raises $10M Series B from GoTo Financial and Indika Group
-          </p>
-          <div class="w-px h-5 bg-slate-500"></div>
-          <a
-            href="#"
-            class="px-2 py-3 font-medium flex justify-center items-center gap-2"
-            >Read more <i class="fa-solid fa-caret-right text-slate-400"></i
-          ></a>
+          <div class="flex items-center slide">
+            <p class="py-3 px-2">
+              🚀 Fluent raises $10M Series B from GoTo Financial and Indika
+              Group — 📈 Market update: Tech stocks rally on global growth
+              optimism — 🔥 New product launch coming this fall — stay tuned!
+            </p>
+            <div class="w-px h-5 bg-slate-500"></div>
+            <a
+              href="#"
+              class="px-2 py-3 font-medium flex justify-center items-center gap-2"
+              >Read more <i class="fa-solid fa-caret-right text-slate-400"></i
+            ></a>
+          </div>
         </section>
+
         <section class="w-full border-b h-24">
           <!-- Header Two for navigation -->
           <nav class="flex justify-between items-center h-full mx-auto w-[90%]">
             <a href="#" class="text-primary-dark font-medium text-3xl"
               >Fluent</a
             >
-            <div>
-              <ul class="flex justify-between items-center gap-5 text-md">
+            <div class="">
+              <ul
+                class="hidden lg:flex justify-between items-center gap-5 text-md"
+              >
                 <li>
                   <a href="#"
                     >Solutions
@@ -76,13 +83,17 @@
                 <li><a href="#">Company</a></li>
               </ul>
             </div>
-            <div class="flex justify-start items-center gap-6">
+            <div class="hidden lg:flex justify-start items-center gap-6">
               <a href="" class="text-md">Sign in </a>
               <button
                 class="h-12 w-40 bg-primary-main text-white cursor-pointer px-4 text-md"
               >
                 Talk to sales
               </button>
+            </div>
+
+            <div class="lg:hidden">
+              <i><i class="fa fa-bars" aria-hidden="true"></i></i>
             </div>
           </nav>
         </section>
